@@ -1,0 +1,17 @@
+serverAddr = "192.168.8.109"
+serverPort = 5000
+auth.method = "token"
+auth.token = "admin"
+
+
+[[proxies]]
+name = "plugin_socks5"
+type = "tcp"
+remotePort = 1081
+transport.useEncryption = true
+transport.useCompression = true
+
+[proxies.plugin]
+type = "socks5"
+username = "abc"
+password = "abc"
